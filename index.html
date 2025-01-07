@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="uedIS-_ua1GZ866Ty8wNV5CTlmJXVWvrSQywJmvUw-s" />
+    <title>خانه - فروشگاه آنلاین</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IRANSans:wght@400;700&display=swap');
+        body {
+            font-family: 'IRANSans', Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 1em;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background-color 0.3s ease;
+        }
+        .nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2em;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .image {
+            flex: 1 1 calc(50% - 1em);
+            margin: 0.5em;
+            cursor: pointer;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .image:hover img {
+            transform: scale(1.05);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .icon-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1em;
+            padding: 2em;
+            margin: 2em auto;
+            max-width: 600px;
+            justify-content: center; /* انتقال آیکون‌ها به وسط صفحه */
+        }
+        .icon {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1em;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            overflow: hidden; /* برای اطمینان از اینکه تصویر داخل آیکون کامل نمایش داده می‌شود */
+        }
+        .icon img {
+            width: 100%; /* تصویر باید کل آیکون را پوشش دهد */
+            height: auto;
+            object-fit: cover; /* اطمینان از اینکه تصویر کل آیکون را پوشش می‌دهد */
+            border-radius: 8px 8px 0 0;
+        }
+        .icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>خانه - فروشگاه آنلاین</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">خانه</a>
+        <a href="about.html">درباره ما</a>
+        <a href="cart.html">سبد خرید</a>
+    </div>
+    <div class="container">
+        <!-- تصویر ۱ -->
+        <div class="image" id="image1">
+            <img src="2.jpg" alt="تصویر ۱">
+        </div>
+        <!-- تصویر ۲ -->
+        <div class="image">
+            <img src="1.jpg" alt="تصویر ۲">
+        </div>
+        <!-- تصویر ۳ -->
+        <div class="image">
+            <img src="4.jpg" alt="تصویر ۳">
+        </div>
+        <!-- تصویر ۴ -->
+        <div class="image">
+            <img src="3.jpg" alt="تصویر ۴">
+        </div>
+    </div>
+    <div class="icon-container">
+        <!-- تغییر آیکون‌ها -->
+        <div class="icon">
+            <img src="5.jpg" alt="قهوه ساز فانتزی">
+            <p>لوازم برقی</p>
+        </div>
+        <div class="icon">
+            <img src="5.jpg" alt="آیکون ۲">
+            <p>لوازم برقی</p>
+        </div>
+        <div class="icon">
+            <img src="5.jpg" alt="آیکون ۳">
+            <p>لوازم برقی</p>
+        </div>
+        <div class="icon">
+            <img src="5.jpg" alt="آیکون ۴">
+            <p>لوازم برقی</p>
+        </div>
+        <div class="icon">
+            <img src="5.jpg" alt="آیکون ۵">
+            <p>لوازم برقی</p>
+        </div>
+        <div class="icon">
+            <img src="5.jpg" alt="آیکون ۶">
+            <p>لوازم برقی</p>
+        </div>
+        <div class="icon">
+            <img src="5.jpg" alt="آیکون ۷">
+            <p>لوازم برقی</p>
+        </div>
+        <div class="icon">
+            <img src="5.jpg" alt="آیکون ۸">
+            <p>لوازم برقی</p>
+        </div>
+        <div class="icon">
+            <img src="5.jpg" alt="آیکون ۹">
+            <p>لوازم برقی</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>تمامی حقوق شما در سایت محفوظ است.</p>
+    </div>
+    <script>
+        document.getElementById('image1').addEventListener('click', function() {
+            window.location.href = 'products.html';
+        });
+    </script>
+</body>
+</html>
